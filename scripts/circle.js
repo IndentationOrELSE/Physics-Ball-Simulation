@@ -117,47 +117,13 @@ const boundaryColor = {
 balls.forEach((ball)=>{
 	ball.radius = 30;
 })
-// NOTES FOR SONG
-// const notes = [
-// 	F[5],
-// 	D[5],
-// 	A[4],
-// 	D[5],
-// 	F[5],
-// 	D[5],
-// 	A[4],
-// 	D[5],
-// 	F[5],
-// 	C[5],
-// 	A[4],
-// 	C[5],
-// 	F[5],
-// 	C[5],
-// 	A[4],
-// 	C[5],
-// 	E[5],
-// 	Db[5],
-// 	A[4],
-// 	Db[5],
-// 	E[5],
-// 	Db[5],
-// 	A[4],
-// 	Db[5],
-// 	E[5],
-// 	Db[5],
-// 	A[4],
-// 	Db[5],
-// 	E[5],
-// 	Db[5],
-// 	A[4],
-// 	Db[5],
-//  ];
+
 const notes = [[A[3],C[4],E[4],F[4],A[4],A[5]], E[6],A[5],E[6],[B[3],E[4],G[4],B[5]],E[6],B[5],E[6],  [A[3],C[4],E[4],A[4],C[6]],E[6],C[6],E[6],[B[3],D[4],E[4],G[4],D[6]],E[6],D[6],E[6],B[5]]
 const accompany = [[A[3],C[4],E[4],F[4],A[4]],[B[3],E[4],G[4]],[A[3],C[4],E[4],A[4]],[B[3],D[4],E[4],G[4]]]
 //const notes = [Bb[5], Bb[5], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5],Eb[6],F[6],F[6],Ab[6],Gb[6],F[6],Eb[6],Eb[6],Ab[6],Gb[6],F[6],Eb[6],Eb[6],Bb[5],B[5],Eb[6],Bb[5],Bb[5]] 
 const sampler = new Tone.Sampler({
 	urls: {
-		G3: "media/piano_C_major.wav",
+		G3: "media/Samples/Piano.wav",
 	},
 }).toDestination();
 let iteration = 0;

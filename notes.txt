@@ -1,70 +1,85 @@
-// const notes = [
-// 	E[4], E[4], E[4], E[4],
-// 	C[4], E[4], G[4],
-// 	G[3],
+SUPER MARIO BROS
+const notes = [
+  	E[4], E[4], E[4], E[4],
+  	C[4], E[4], G[4],
+  	G[3],
   
-// 	C[4], G[3], E[3],
-// 	A[3], B[3], Bb[3], A[3],
+  	C[4], G[3], E[3],
+  	A[3], B[3], Bb[3], A[3],
   
-// 	G[3], E[4], G[4], A[4],
-// 	F[4], G[4], E[4], C[4], D[4], B[3],
+  	G[3], E[4], G[4], A[4],
+  	F[4], G[4], E[4], C[4], D[4], B[3],
   
-// 	C[4], G[3], E[3],
-// 	A[3], B[3], Bb[3], A[3],
+  	C[4], G[3], E[3],
+  	A[3], B[3], Bb[3], A[3],
   
-// 	G[3], E[4], G[4], A[4],
-// 	F[4], G[4], E[4], C[4], D[4], B[3],	
+  	G[3], E[4], G[4], A[4],
+  	F[4], G[4], E[4], C[4], D[4], B[3],	
 
-// 	G[4], Gb[4], F[4], Eb[4],
-// 	E[4],
+  	G[4], Gb[4], F[4], Eb[4],
+  	E[4],
   
-// 	Ab[3], A[3], C[4], A[3],
-// 	C[4], D[4],
+  	Ab[3], A[3], C[4], A[3],
+  	C[4], D[4],
   
-// 	G[4], Gb[4], F[4], Eb[4],
-// 	E[4], C[5], C[5], C[5],
+  	G[4], Gb[4], F[4], Eb[4],
+  	E[4], C[5], C[5], C[5],
     
-// 	G[4], Gb[4], F[4], Eb[4],
-// 	E[4],
+  	G[4], Gb[4], F[4], Eb[4],
+  	E[4],
   
-// 	Ab[3], A[3], C[4], A[3],
-// 	C[4], D[4],Eb[4],D[4],C[4],C[4], C[4], C[4],
-// 	C[4], D[4], E[4], C[4],A[3],G[3],
-// 	C[4], C[4], C[4],
-// 	C[4], D[4], E[4],
+  	Ab[3], A[3], C[4], A[3],
+  	C[4], D[4],Eb[4],D[4],C[4],C[4], C[4], C[4],
+  	C[4], D[4], E[4], C[4],A[3],G[3],
+  	C[4], C[4], C[4],
+  	C[4], D[4], E[4],
 	
-// 	C[4], C[4], C[4],
-// 	C[4], D[4], E[4], C[4],A[3],G[3],
-// 	E[4], E[4], E[4],
-// 	C[4], E[4], G[4],
-// 	G[3],
+  	C[4], C[4], C[4],
+  	C[4], D[4], E[4], C[4],A[3],G[3],
+  	E[4], E[4], E[4],
+  	C[4], E[4], G[4],
+  	G[3],
 
-// 	C[5], C[5], C[5],
-// 	G[4], Gb[4], F[4], Eb[4],
-// 	E[4]
-//   ];
-//let notes = [Db[5], B[4], Db[5], Gb[4], D[5], Db[5], D[5], Db[5], B[4], D[5], Db[5], D[5], Gb[4], B[4], A[4], B[4], A[4], Ab[4], B[4], A[4] ];
+  	C[5], C[5], C[5],
+  	G[4], Gb[4], F[4], Eb[4],
+  	E[4]
+    ];
 
-//  let frequency = notes[iteration % notes.length];
-//   let oscillator = audioContext.createOscillator();
-//   oscillator.type = 'triangle';
-//   oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
-//   oscillator.connect(audioContext.destination);
-//   oscillator.start();
-//   oscillator.stop(audioContext.currentTime + 0.3);
+THE FINAL COUNTDOWN
+let notes = [Db[5], B[4], Db[5], Gb[4], D[5], Db[5], D[5], Db[5], B[4], D[5], Db[5], D[5], Gb[4], B[4], A[4], B[4], A[4], Ab[4], B[4], A[4] ];
 
-
-//   const audio = new Audio('C:\\Users\\home\\Documents\\My Web Sites\\haggstromAGAIN-trimmed.wav'); // Replace with the path to your MP3 file
-//   const startTime = iteration; // Start time in seconds
-//   const duration = 60/112; // Duration in seconds
-
-//   audio.currentTime = startTime; // Set the start time
-//   audio.play();
-
-//   // SetA[3]timeout to stop the audio after the specified duration
-//   setTimeout(function() {
-// 	audio.pause();
-//   }, duration * 1000); // Convert duration to milliseconds
-//   iteration = iteration + duration
-
-
+TOKYO DRIFT
+const notes = [
+  	F[5],
+  	D[5],
+  	A[4],
+  	D[5],
+  	F[5],
+  	D[5],
+  	A[4],
+  	D[5],
+  	F[5],
+  	C[5],
+  	A[4],
+  	C[5],
+  	F[5],
+  	C[5],
+  	A[4],
+  	C[5],
+  	E[5],
+  	Db[5],
+  	A[4],
+  	Db[5],
+  	E[5],
+  	Db[5],
+  	A[4],
+  	Db[5],
+  	E[5],
+  	Db[5],
+  	A[4],
+  	Db[5],
+  	E[5],
+  	Db[5],
+  	A[4],
+  	Db[5],
+   ];
