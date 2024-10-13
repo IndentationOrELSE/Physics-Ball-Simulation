@@ -120,7 +120,6 @@ balls.forEach((ball)=>{
 
 const notes = [[A[3],C[4],E[4],F[4],A[4],A[5]], E[6],A[5],E[6],[B[3],E[4],G[4],B[5]],E[6],B[5],E[6],  [A[3],C[4],E[4],A[4],C[6]],E[6],C[6],E[6],[B[3],D[4],E[4],G[4],D[6]],E[6],D[6],E[6],B[5]]
 const accompany = [[A[3],C[4],E[4],F[4],A[4]],[B[3],E[4],G[4]],[A[3],C[4],E[4],A[4]],[B[3],D[4],E[4],G[4]]]
-//const notes = [Bb[5], Bb[5], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5], Eb[6], Bb[5], Bb[5], Bb[5], B[5],Eb[6],F[6],F[6],Ab[6],Gb[6],F[6],Eb[6],Eb[6],Ab[6],Gb[6],F[6],Eb[6],Eb[6],Bb[5],B[5],Eb[6],Bb[5],Bb[5]] 
 const sampler = new Tone.Sampler({
 	urls: {
 		G3: "media/Samples/Piano.wav",
@@ -162,7 +161,12 @@ function duplicateBall(originalBall) {
     // Leave the original ball's properties unchanged, but move the new ball
     originalBall.dx = 0;
     originalBall.dy = 0;
-    originalBall.useGravity = false; // Disable gravity only for the new ball
+	if (newBall.dx > 0){
+		newBall.dx = newBall.dx * -1
+	}
+	if (newBall.dy > 0){
+		newBall.dy = newBall.dy * -1
+	}
 }
 
 function rand(min, max) {
@@ -173,13 +177,9 @@ function playSound() {
 	const vol0vol = new Tone.Volume(-30).toDestination()
 	iteration++;
 	try {
-		if (iteration % 4 === 1 || iteration == 1){
-			sampler.triggerAttackRelease(frequency, 1.2).connect(vol0vol)
-		}else{
 		sampler.triggerAttackRelease(frequency, 1.2).connect(vol0vol)
-		}
 	} catch (e) {
-		let error = e;
+		console.error(e)
 	}
 }
 
