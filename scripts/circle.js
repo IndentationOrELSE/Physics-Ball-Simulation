@@ -120,11 +120,16 @@ balls.forEach((ball)=>{
 
 const notes = [[A[3],C[4],E[4],F[4],A[4],A[5]], E[6],A[5],E[6],[B[3],E[4],G[4],B[5]],E[6],B[5],E[6],  [A[3],C[4],E[4],A[4],C[6]],E[6],C[6],E[6],[B[3],D[4],E[4],G[4],D[6]],E[6],D[6],E[6],B[5]]
 const accompany = [[A[3],C[4],E[4],F[4],A[4]],[B[3],E[4],G[4]],[A[3],C[4],E[4],A[4]],[B[3],D[4],E[4],G[4]]]
+try{
 const sampler = new Tone.Sampler({
 	urls: {
 		G3: "media/Samples/Piano.wav",
 	},
 }).toDestination();
+}
+catch (e){
+	console.log(e)
+}
 let iteration = 0;
 let chorditeration = 0;
 let trail = [];
@@ -174,12 +179,16 @@ function rand(min, max) {
 }
 function playSound() {
 	let frequency = notes[iteration % notes.length];
+	try {
 	const vol0vol = new Tone.Volume(-30).toDestination()
 	iteration++;
 	try {
 		sampler.triggerAttackRelease(frequency, 1.2).connect(vol0vol)
 	} catch (e) {
 		console.error(e)
+	}}
+	catch {
+		
 	}
 }
 

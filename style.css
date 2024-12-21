@@ -208,15 +208,18 @@ div {
 	top:-8rem;
   }
 .customisers{
-	margin-top: 5%;
+	margin-top: 20%;
 	margin-right: 20%;
 	display: grid;
 	place-content: center;
 	height: 20vh;
+	width: 5%;
 	text-align:center;
+	font-size: 2em;
 }
 .customisers div{
-	margin:auto;
+	margin: auto;
+	width: 5vh;
 }
 
 input[type=number] {
